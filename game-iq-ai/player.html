@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Player view — Game IQ AI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="topbar">
+    <a class="brand" href="analysis.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M5 12l5-5M5 12l5 5"/></svg>
+      </span>
+      Player view
+    </a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.6 6.6 0 0 0 21 12.8z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </header>
+
+  <span class="eyebrow">Jordan · #8</span>
+  <h2 class="mt-8">Your game, broken down</h2>
+  <p class="muted mt-8">Direct and honest. Here's what you did well and your missions for next match.</p>
+
+  <div class="card mt-16">
+    <div class="card-title"><h3>Your superpower</h3><span class="badge badge--gold">Keep it forever</span></div>
+    <p class="muted">That pass in the 8th minute? That's who you are. You see the field better than almost anyone your age because you check your shoulders before you get the ball. Never lose that habit.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><h3>The honest truth</h3></div>
+    <p class="muted">Three times this match a teammate was open ahead of you and you played it sideways. You have the vision — now trust it. Being brave with the ball is the one thing standing between you and the next level.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><h3>Your development plan</h3><span class="small">this week</span></div>
+    <div class="action-item"><span class="check"></span><div><strong>Two forward passes per game</strong><p>Break a line at least twice next match. Even if it gets cut out — we're counting attempts, not outcomes.</p></div></div>
+    <div class="action-item"><span class="check"></span><div><strong>Left foot, 25 minutes</strong><p>Against a wall. Plant your standing foot close to the ball and finish the kick all the way through.</p></div></div>
+    <div class="action-item"><span class="check"></span><div><strong>Turn lower, turn faster</strong><p>Before you change direction, sink your hips and get low. You'll cut sharper and lose nobody.</p></div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><h3>Your best moments</h3></div>
+    <div class="moment">
+      <time>07:42</time>
+      <div><span class="event-chip event-chip--good">Assist</span><p>First-time through-ball. Elite.</p></div>
+    </div>
+    <div class="moment">
+      <time>33:08</time>
+      <div><span class="event-chip event-chip--good">Engine</span><p>40-yard sprint to kill a counter. Captain stuff.</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><h3>Next match mission</h3><span class="badge badge--accent">Track it</span></div>
+    <p class="muted">Two line-breaking forward passes. Get them and your Match IQ jumps. We'll check the next upload together.</p>
+  </div>
+
+  <a class="btn btn--ghost" href="progress.html">See how far you've come</a>
+  <a class="btn btn--quiet" href="analysis.html">View the full report</a>
+
+</div>
+
+<nav class="tabbar">
+  <div class="tabbar-inner">
+    <a href="upload.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+      Upload
+    </a>
+    <a href="analysis.html" class="is-active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+      Reports
+    </a>
+    <a href="progress.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+      Progress
+    </a>
+    <a href="pricing.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg>
+      Plan
+    </a>
+  </div>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
