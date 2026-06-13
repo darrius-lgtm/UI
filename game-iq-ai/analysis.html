@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Analysis — Game IQ AI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7.5 16 10.5 14.5 15h-5L8 10.5z"/></svg>
+      </span>
+      Game IQ AI
+    </a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.6 6.6 0 0 0 21 12.8z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </header>
+
+  <div class="player-head">
+    <span class="player-avatar">J8</span>
+    <div>
+      <h2>Jordan — Match Report</h2>
+      <p class="small">vs Eastside United · Apr 12 · U13 Central Midfield · 52 min analyzed</p>
+    </div>
+  </div>
+
+  <!-- Confidence score -->
+  <div class="card confidence-card">
+    <div class="score-ring" data-score="82" data-max="100">
+      <svg width="120" height="120" viewBox="0 0 120 120">
+        <circle class="track" cx="60" cy="60" r="52" stroke-width="9" fill="none"/>
+        <circle class="meter" cx="60" cy="60" r="52" stroke-width="9" fill="none"/>
+      </svg>
+      <div class="score-num">82<span>/ 100</span></div>
+    </div>
+    <div>
+      <h3>Analysis confidence</h3>
+      <p class="small mt-8">High. Based on 52 minutes of 1080p footage from a single elevated angle. Jordan was clearly trackable for 94% of the match. A second half from a wider angle would raise confidence further.</p>
+    </div>
+  </div>
+
+  <!-- Executive summary -->
+  <div class="card">
+    <div class="card-title">
+      <h3>Executive summary</h3>
+      <span class="badge badge--accent">Match IQ 74</span>
+    </div>
+    <p class="muted">Jordan controlled tempo well in a 2-1 win, completing 41 of 47 passes and showing standout scanning habits before receiving. The clearest growth edge is bravery in possession: under pressure, Jordan chose the safe sideways pass 8 of 10 times when a forward option was on. Defensive work rate was excellent; pressing angles need refinement to stop cutting off only one passing lane.</p>
+  </div>
+
+  <!-- Technical ratings -->
+  <div class="card">
+    <div class="card-title">
+      <h3>Technical ratings</h3>
+      <span class="small">vs U13 competitive benchmark</span>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">First touch</span>
+      <span class="rating-value">7.6</span>
+      <div class="rating-track"><div class="rating-fill" data-score="7.6"></div></div>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">Short passing</span>
+      <span class="rating-value">7.8</span>
+      <div class="rating-track"><div class="rating-fill" data-score="7.8"></div></div>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">Long passing</span>
+      <span class="rating-value">6.4</span>
+      <div class="rating-track"><div class="rating-fill" data-score="6.4"></div></div>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">Ball striking</span>
+      <span class="rating-value">6.1</span>
+      <div class="rating-track"><div class="rating-fill" data-score="6.1"></div></div>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">Dribbling under pressure</span>
+      <span class="rating-value">6.2</span>
+      <div class="rating-track"><div class="rating-fill" data-score="6.2"></div></div>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">Weak foot use</span>
+      <span class="rating-value">5.5</span>
+      <div class="rating-track"><div class="rating-fill" data-score="5.5"></div></div>
+    </div>
+  </div>
+
+  <!-- Tactical ratings -->
+  <div class="card">
+    <div class="card-title">
+      <h3>Tactical ratings</h3>
+      <span class="small">decision-making and positioning</span>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">Scanning before receiving</span>
+      <span class="rating-value">8.2</span>
+      <div class="rating-track"><div class="rating-fill rating-fill--gold" data-score="8.2"></div></div>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">Positioning between lines</span>
+      <span class="rating-value">7.1</span>
+      <div class="rating-track"><div class="rating-fill" data-score="7.1"></div></div>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">Forward-pass selection</span>
+      <span class="rating-value">5.8</span>
+      <div class="rating-track"><div class="rating-fill" data-score="5.8"></div></div>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">Pressing angles</span>
+      <span class="rating-value">6.0</span>
+      <div class="rating-track"><div class="rating-fill" data-score="6.0"></div></div>
+    </div>
+    <div class="rating-row">
+      <span class="rating-label">Transition reactions</span>
+      <span class="rating-value">7.4</span>
+      <div class="rating-track"><div class="rating-fill" data-score="7.4"></div></div>
+    </div>
+  </div>
+
+  <!-- On-ball / off-ball movement -->
+  <div class="card">
+    <div class="card-title"><h3>Movement observations</h3></div>
+
+    <span class="badge badge--accent">On the ball</span>
+    <ul class="fact-list mt-8" style="margin-bottom:14px;">
+      <li><span class="dot"></span><span><strong>47 touches,</strong> mostly in the central channel between halfway and the attacking third.</span></li>
+      <li><span class="dot"></span><span>Receives side-on with an open body on <strong>7 of 10</strong> receptions — well above age benchmark.</span></li>
+      <li><span class="dot dot--danger"></span><span>When pressed from behind, releases the ball in under 1 second and rarely turns — <strong>2 of 9</strong> attempts to play forward off the half-turn.</span></li>
+    </ul>
+
+    <span class="badge badge--neutral">Off the ball</span>
+    <ul class="fact-list mt-8">
+      <li><span class="dot"></span><span>Constant scanning: <strong>4.1 looks per 10 seconds</strong> before receiving in midfield.</span></li>
+      <li><span class="dot"></span><span>Good covering runs when the right back pushed up — recovered position within 6 seconds on average.</span></li>
+      <li><span class="dot dot--danger"></span><span>Tends to drift toward the ball in attack, closing the passing lane a teammate needs. Happened <strong>5 times</strong> in the first half.</span></li>
+    </ul>
+  </div>
+
+  <!-- Strengths -->
+  <div class="card">
+    <div class="card-title">
+      <h3>Strengths</h3>
+      <span class="badge badge--gold">Keep building</span>
+    </div>
+    <ul class="fact-list">
+      <li><span class="dot dot--gold"></span><span><strong>Elite scanning habits for the age group.</strong> Checks both shoulders before nearly every reception. This is the foundation of a high-level midfielder.</span></li>
+      <li><span class="dot dot--gold"></span><span><strong>Composure in tight central areas.</strong> Only 3 lost possessions from 47 touches despite a congested midfield.</span></li>
+      <li><span class="dot dot--gold"></span><span><strong>Defensive engine.</strong> Top-three sprint efforts on the team in defensive transition; never left the midfield short.</span></li>
+    </ul>
+  </div>
+
+  <!-- Improvement areas -->
+  <div class="card">
+    <div class="card-title">
+      <h3>Improvement areas</h3>
+      <span class="badge badge--danger">Priority focus</span>
+    </div>
+    <ul class="fact-list">
+      <li><span class="dot dot--danger"></span><span><strong>Playing forward under pressure.</strong> The safe pass is the default. The next level requires risking the line-breaking ball when it's on.</span></li>
+      <li><span class="dot dot--danger"></span><span><strong>Weak-foot confidence.</strong> 5 of 6 left-footed passes were short and under-hit. Defenders will start forcing Jordan left.</span></li>
+      <li><span class="dot dot--danger"></span><span><strong>Pressing body shape.</strong> Approaches the ball-carrier straight-on, allowing escapes to either side. Curved runs would cut the pitch in half.</span></li>
+    </ul>
+  </div>
+
+  <!-- Key moments -->
+  <div class="card">
+    <div class="card-title">
+      <h3>Key moments</h3>
+      <span class="small">timestamped</span>
+    </div>
+    <div class="moment">
+      <time>07:42</time>
+      <p><strong>Best action of the match.</strong> Scanned twice, received between the lines, and slid a first-time ball into the striker's run. Led to the opening goal.</p>
+    </div>
+    <div class="moment">
+      <time>19:15</time>
+      <p><strong>Missed forward option.</strong> Winger free in 12 yards of space; Jordan chose the square pass. This pattern repeated at 26:03 and 41:50.</p>
+    </div>
+    <div class="moment">
+      <time>33:08</time>
+      <p><strong>Excellent recovery run.</strong> Sprinted 40 yards to break up a 3v2 counter. Read the danger before anyone else.</p>
+    </div>
+    <div class="moment">
+      <time>48:30</time>
+      <p><strong>Pressing escape conceded.</strong> Straight-line press let the opposing #10 roll away and switch play, leading to Eastside's goal two passes later.</p>
+    </div>
+  </div>
+
+  <!-- Development actions -->
+  <div class="card">
+    <div class="card-title">
+      <h3>Development actions</h3>
+      <span class="small">this week</span>
+    </div>
+    <div class="action-item">
+      <span class="check"></span>
+      <div>
+        <strong>Half-turn receiving — 3 x 10 min</strong>
+        <p>Wall passes receiving on the back foot, turning into an imagined forward window. Add a passive defender by session three.</p>
+      </div>
+    </div>
+    <div class="action-item">
+      <span class="check"></span>
+      <div>
+        <strong>Weak-foot wall work — 3 x 8 min</strong>
+        <p>Left-foot only: 50 push passes, 25 driven balls. Goal is matching right-foot pace by next month's report.</p>
+      </div>
+    </div>
+    <div class="action-item">
+      <span class="check"></span>
+      <div>
+        <strong>One brave pass per half</strong>
+        <p>In the next match, attempt at least one line-breaking forward pass per half, even at the risk of a turnover. We'll track it.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audience views -->
+  <div class="section-gap">
+    <div class="section-head">
+      <span class="eyebrow">The same match, three ways</span>
+      <h2>Summaries</h2>
+    </div>
+
+    <div class="segment" data-segment="audience">
+      <button class="is-active" data-panel="view-parent">Parent</button>
+      <button data-panel="view-coach">Coach</button>
+      <button data-panel="view-player">Player</button>
+    </div>
+
+    <div id="view-parent" class="tab-panel is-active" data-panel-group="audience">
+      <div class="card">
+        <div class="card-title"><h3>Parent summary</h3></div>
+        <p class="muted">Jordan had a genuinely strong game. The habit of looking around before getting the ball — something most kids this age don't do — is Jordan's superpower, and it showed in the assist for the first goal. The one thing holding Jordan back is caution: when an exciting forward pass is available, Jordan usually picks the safe one. That's normal at this stage and very coachable. This month, celebrate the brave passes even when they don't come off. The drills above take about 30 minutes, three times a week, and only need a ball and a wall.</p>
+      </div>
+    </div>
+
+    <div id="view-coach" class="tab-panel" data-panel-group="audience">
+      <div class="card">
+        <div class="card-title"><h3>Coach summary</h3></div>
+        <p class="muted">Profile: progressing 8 with high scan frequency (4.1/10s) and clean reception data, but a conservative pass map — 81% of completions lateral or backward. Recommend rondo variants rewarding split passes, and constraints games where lateral passes are capped. Out of possession, pressing approach is flat; work curved-run pressing with cover shadow on the near passing lane. Transition recognition is ahead of the age curve — consider trialing Jordan as the single pivot in a 4-3-3 to force forward distribution.</p>
+      </div>
+    </div>
+
+    <div id="view-player" class="tab-panel" data-panel-group="audience">
+      <div class="card">
+        <div class="card-title"><h3>Player summary</h3></div>
+        <p class="muted">Jordan — that pass in the 8th minute? That's who you are. You see the field better than almost anyone your age because you check your shoulders constantly. Keep that forever. Here's your one big challenge: be braver. Three times this match a teammate was open ahead of you and you played sideways. You have the vision — now trust it. Your mission for the next game: two forward passes that break a line. We're counting. And get that left foot working — 25 minutes against a wall this week.</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="btn btn--ghost" href="progress.html">View season progress</a>
+
+</div>
+
+<nav class="tabbar">
+  <div class="tabbar-inner">
+    <a href="upload.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+      Upload
+    </a>
+    <a href="analysis.html" class="is-active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+      Reports
+    </a>
+    <a href="progress.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+      Progress
+    </a>
+    <a href="pricing.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg>
+      Plan
+    </a>
+  </div>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>

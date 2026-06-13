@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Get started — Game IQ AI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page page--landing">
+
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7.5 16 10.5 14.5 15h-5L8 10.5z"/></svg>
+      </span>
+      Game IQ AI
+    </a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3 6.6 6.6 0 0 0 21 12.8z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </header>
+
+  <div class="stepper">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Step 1: Account -->
+  <section data-step="1">
+    <span class="eyebrow">Step 1 of 4</span>
+    <h2 class="mt-8">Create your account</h2>
+    <p class="muted mt-8">One account covers your whole family.</p>
+
+    <div class="card mt-16">
+      <div class="field">
+        <label for="su-name">Your name</label>
+        <input id="su-name" type="text" placeholder="Jamie Carter" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="su-email">Email</label>
+        <input id="su-email" type="email" placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="su-pass">Password</label>
+        <input id="su-pass" type="password" placeholder="8+ characters">
+      </div>
+      <button class="btn btn--primary" data-next-step="2">Continue</button>
+      <button class="btn btn--quiet mt-8">Continue with Apple</button>
+    </div>
+  </section>
+
+  <!-- Step 2: Who are you -->
+  <section data-step="2" class="hidden">
+    <span class="eyebrow">Step 2 of 4</span>
+    <h2 class="mt-8">Who's using Game IQ?</h2>
+    <p class="muted mt-8">We tailor every report to how you read it.</p>
+
+    <div class="card mt-16">
+      <div class="choice-grid" data-choice-group="role">
+        <button class="choice is-selected">Parent</button>
+        <button class="choice">Coach</button>
+        <button class="choice">Player</button>
+        <button class="choice">Club / Team</button>
+      </div>
+      <button class="btn btn--primary mt-16" data-next-step="3">Continue</button>
+    </div>
+  </section>
+
+  <!-- Step 3: Player profile -->
+  <section data-step="3" class="hidden">
+    <span class="eyebrow">Step 3 of 4</span>
+    <h2 class="mt-8">Tell us about your player</h2>
+    <p class="muted mt-8">This calibrates ratings to the right age and level.</p>
+
+    <div class="card mt-16">
+      <div class="field">
+        <label for="pl-name">Player first name</label>
+        <input id="pl-name" type="text" placeholder="Jordan">
+      </div>
+      <div class="field">
+        <label for="pl-age">Age group</label>
+        <select id="pl-age">
+          <option>U8</option><option>U9</option><option>U10</option>
+          <option>U11</option><option>U12</option><option selected>U13</option>
+          <option>U14</option><option>U15</option><option>U16</option>
+          <option>U17+</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Primary position</label>
+        <div class="choice-grid" data-choice-group="position">
+          <button class="choice">Goalkeeper</button>
+          <button class="choice">Defender</button>
+          <button class="choice is-selected">Midfielder</button>
+          <button class="choice">Forward</button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="pl-level">Current level</label>
+        <select id="pl-level">
+          <option>Recreational</option>
+          <option selected>Competitive / Select</option>
+          <option>Academy / ECNL / MLS Next</option>
+          <option>High school</option>
+        </select>
+      </div>
+      <button class="btn btn--primary" data-next-step="4">Continue</button>
+    </div>
+  </section>
+
+  <!-- Step 4: Goals -->
+  <section data-step="4" class="hidden">
+    <span class="eyebrow">Step 4 of 4</span>
+    <h2 class="mt-8">What matters most right now?</h2>
+    <p class="muted mt-8">Pick up to three. Reports will weight these areas.</p>
+
+    <div class="card mt-16">
+      <div class="choice-grid" data-choice-group="goals" data-multi>
+        <button class="choice is-selected">Confidence on the ball</button>
+        <button class="choice">Making a top team</button>
+        <button class="choice is-selected">Game awareness</button>
+        <button class="choice">Speed and movement</button>
+        <button class="choice">Defending 1v1</button>
+        <button class="choice">Finishing</button>
+      </div>
+      <a class="btn btn--primary mt-16" href="upload.html">Upload your first video</a>
+      <p class="small mt-8" style="text-align:center;">Your first full analysis is free.</p>
+    </div>
+  </section>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
