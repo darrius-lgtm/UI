@@ -712,3 +712,125 @@ html[data-theme="dark"] .icon-moon { display: none; }
 @media (min-width: 520px) {
   .page { padding-left: 0; padding-right: 0; }
 }
+
+/* ---------- v2: score trio ---------- */
+
+.score-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.score-trio .card { margin-bottom: 0; padding: 14px 8px; text-align: center; }
+.score-ring--sm { width: 76px; height: 76px; margin: 0 auto; }
+.score-ring--sm .score-num { font-size: 19px; }
+.score-ring--sm .score-num span { font-size: 10px; }
+.score-trio .small { display: block; margin-top: 8px; font-weight: 700; }
+
+/* ---------- v2: mechanics groups ---------- */
+
+.mech-group { padding: 14px 0; }
+.mech-group + .mech-group { border-top: 1px solid var(--line); }
+.mech-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.mech-head h4 { font-size: 14.5px; font-weight: 800; }
+.mech-group .fact-list li { padding: 8px 0; font-size: 14px; }
+.mech-group .fact-list li:first-child { border-top: none; }
+
+/* ---------- v2: event timeline ---------- */
+
+.event-chip {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+.event-chip--good { background: var(--accent-soft); color: var(--accent); }
+.event-chip--work { background: var(--danger-soft); color: var(--danger); }
+.event-chip--info { background: var(--surface-2); color: var(--ink-2); }
+
+/* ---------- v2: comparison rows ---------- */
+
+.delta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.delta-row + .delta-row { border-top: 1px solid var(--line); }
+.delta-row .delta-label { flex: 1; font-weight: 600; }
+.delta-row .delta-vals { font-variant-numeric: tabular-nums; color: var(--ink-3); font-size: 13px; }
+.delta-row .session-delta { margin-left: 0; min-width: 38px; text-align: right; }
+
+/* ---------- v2: coach view comments ---------- */
+
+.comment { display: flex; gap: 12px; padding: 12px 0; }
+.comment + .comment { border-top: 1px solid var(--line); }
+.comment .avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--surface-2); color: var(--ink-2);
+  font-weight: 800; font-size: 13px;
+  display: grid; place-items: center; flex-shrink: 0;
+}
+.comment .avatar--coach { background: var(--accent-soft); color: var(--accent); }
+.comment strong { font-size: 13.5px; }
+.comment p { font-size: 14px; color: var(--ink-2); }
+.comment time { font-size: 12px; color: var(--ink-3); margin-left: 6px; font-weight: 600; }
+
+/* ---------- v2: telestration frame ---------- */
+
+.frame-card {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+.frame-card svg { display: block; width: 100%; height: auto; }
+.frame-caption { padding: 10px 12px; font-size: 13px; color: var(--ink-2); }
+
+/* ---------- v2: player ID candidates ---------- */
+
+.candidate-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.candidate {
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  padding: 14px 8px;
+  text-align: center;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--ink);
+}
+.candidate.is-selected { border-color: var(--accent); background: var(--accent-soft); }
+.candidate .kit {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  margin: 0 auto 8px;
+  display: grid; place-items: center;
+  font-weight: 800; font-size: 17px;
+  color: #fff;
+}
+.candidate .small { font-weight: 700; }
+.candidate.is-selected .small { color: var(--accent); }
+
+/* ---------- v2: misc ---------- */
+
+.inline-links { display: grid; gap: 10px; }
+.note-strip {
+  display: flex; gap: 10px; align-items: flex-start;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 13.5px; color: var(--ink-2);
+  margin-top: 12px;
+}
+.note-strip svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px; color: var(--ink-3); }

@@ -12,7 +12,11 @@ PAGES = [
     ("index.html", "home"),
     ("signup.html", "signup"),
     ("upload.html", "upload"),
+    ("identify.html", "identify"),
     ("analysis.html", "analysis"),
+    ("coach.html", "coach"),
+    ("parent.html", "parent"),
+    ("player.html", "player"),
     ("progress.html", "progress"),
     ("pricing.html", "pricing"),
 ]

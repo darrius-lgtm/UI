@@ -23,7 +23,7 @@
   </header>
 
   <!-- Input state -->
-  <section id="upload-input">
+  <section id="upload-form">
     <span class="eyebrow">New analysis</span>
     <h2 class="mt-8">Add match or training footage</h2>
     <p class="muted mt-8">Longer is better. 20+ minutes of one player gives the most reliable report.</p>
@@ -92,49 +92,11 @@
       </div>
     </div>
 
-    <button class="btn btn--primary" data-start-analysis>
-      Start analysis
+    <a class="btn btn--primary" href="identify.html">
+      Continue to player ID
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </button>
-    <p class="small mt-8" style="text-align:center;">Most reports are ready in under 10 minutes. We'll notify you.</p>
-  </section>
-
-  <!-- Running state -->
-  <section id="upload-running" class="hidden">
-    <span class="eyebrow">Analyzing</span>
-    <h2 class="mt-8">Watching Jordan's match</h2>
-    <p class="muted mt-8">You can close the app — we'll send a notification when the report is ready.</p>
-
-    <div class="card mt-16">
-      <div class="card-title">
-        <h3>vs Eastside United — Apr 12</h3>
-        <span class="small" id="upload-pct">0%</span>
-      </div>
-      <div class="progress-track"><div class="progress-fill" id="upload-progress"></div></div>
-
-      <ul class="analyze-steps mt-16">
-        <li class="is-active">
-          <span class="step-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"/></svg></span>
-          Ingesting video and checking quality
-        </li>
-        <li>
-          <span class="step-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"/></svg></span>
-          Finding and tracking #8 in red
-        </li>
-        <li>
-          <span class="step-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"/></svg></span>
-          Tagging touches, duels, and key moments
-        </li>
-        <li>
-          <span class="step-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"/></svg></span>
-          Scoring technical and tactical performance
-        </li>
-        <li>
-          <span class="step-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"><path d="M5 13l4 4L19 7"/></svg></span>
-          Writing parent, coach, and player reports
-        </li>
-      </ul>
-    </div>
+    </a>
+    <p class="small mt-8" style="text-align:center;">Next we'll confirm exactly which player to track.</p>
   </section>
 
 </div>
